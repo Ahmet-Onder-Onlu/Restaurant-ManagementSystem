@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="462.0" prefWidth="593.0" style="-fx-background-color: gray;" styleClass="anchor-pane-homepage" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo_db_management_project.Homepage">
+   <children>
+      <Button layoutX="108.0" layoutY="100.0" mnemonicParsing="false" onAction="#switchToGiveOrder" prefHeight="115.0" prefWidth="158.0" style="-fx-background-color: yellow; -fx-background-radius: 20;" text="Menu and Give Order">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="45.0" layoutY="35.0" text="Home Page">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="338.0" layoutY="100.0" mnemonicParsing="false" onAction="#switchToIngredientsInsert" prefHeight="115.0" prefWidth="158.0" style="-fx-background-color: lightgreen; -fx-background-radius: 20;" text="Ingredients and Insert">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="108.0" layoutY="242.0" mnemonicParsing="false" onAction="#switchToStockInsert" prefHeight="115.0" prefWidth="158.0" style="-fx-background-color: lightblue; -fx-background-radius: 20;" text="Stock and Insert">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="338.0" layoutY="242.0" mnemonicParsing="false" onAction="#switchToMissionVision" prefHeight="115.0" prefWidth="158.0" style="-fx-background-color: lightgray; -fx-background-radius: 20;" text="Mission and Vision">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

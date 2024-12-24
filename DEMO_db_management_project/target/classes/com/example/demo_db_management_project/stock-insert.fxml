@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo_db_management_project.StockInsert">
+   <children>
+      <Label layoutX="249.0" layoutY="14.0" text="Stock-insert">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="25.0" layoutY="354.0" mnemonicParsing="false" onAction="#switchToHomePage" text="Back">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="ingredientTableView" layoutX="140.0" layoutY="104.0" prefHeight="238.0" prefWidth="152.0">
+        <columns>
+          <TableColumn fx:id="ingredientNameColumn" prefWidth="75.0" text="C1" />
+          <TableColumn fx:id="quantityInStockColumn" prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label layoutX="194.0" layoutY="77.0" text="Stocks" textFill="#0022ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="387.0" layoutY="79.0" text="Insert Ingredients" textFill="#0015ff">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ingredientName" layoutX="427.0" layoutY="137.0" prefHeight="26.0" prefWidth="139.0" />
+      <Label layoutX="323.0" layoutY="142.0" text="Ingredient Name" />
+      <Label layoutX="323.0" layoutY="182.0" text="Ingredient Amount" />
+      <TextField fx:id="ingredientAmount" layoutX="427.0" layoutY="177.0" prefHeight="26.0" prefWidth="73.0" />
+      <Button layoutX="514.0" layoutY="223.0" mnemonicParsing="false" onAction="#insert" text="Insert" />
+   </children>
+</AnchorPane>

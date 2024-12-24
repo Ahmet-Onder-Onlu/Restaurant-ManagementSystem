@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="441.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo_db_management_project.GiveOrder">
+   <children>
+      <Label layoutX="110.0" layoutY="87.0" text="Menu Script" textFill="#0051ff">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="397.0" mnemonicParsing="false" onAction="#switchToHomePage" text="Back">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="220.0" layoutY="22.0" text="Menu and Give Order">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="114.0" layoutY="144.0" text="Makaron">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="181.0" text="Lazanya">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="114.0" layoutY="220.0" text="Waffle">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="144.0" text="300$">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="180.0" text="200$">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="220.0" text="100$">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="makaronAmountField" layoutX="234.0" layoutY="140.0" prefHeight="22.0" prefWidth="34.0" />
+      <TextField fx:id="lazanyaAmountField" layoutX="234.0" layoutY="176.0" prefHeight="22.0" prefWidth="34.0" />
+      <TextField fx:id="waffleAmountField" layoutX="234.0" layoutY="216.0" prefHeight="22.0" prefWidth="34.0" />
+      <Label layoutX="228.0" layoutY="89.0" text="Amount">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="283.0" layoutY="89.0" text="Confirm">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="makaronCheckBox" layoutX="297.0" layoutY="144.0" mnemonicParsing="false" />
+      <CheckBox fx:id="lazanyaCheckBox" layoutX="297.0" layoutY="181.0" mnemonicParsing="false" />
+      <CheckBox fx:id="waffleCheckBox" layoutX="297.0" layoutY="221.0" mnemonicParsing="false" />
+      <Button layoutX="180.0" layoutY="280.0" mnemonicParsing="false" onAction="#calculateTotalPrice" text="Calculate Total Price">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="totalPriceField" layoutX="230.0" layoutY="337.0" prefHeight="26.0" prefWidth="78.0" />
+      <Button layoutX="114.0" layoutY="338.0" mnemonicParsing="false" onAction="#processOrder" text="Give Order" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="423.0" layoutY="88.0" text="Order State">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="377.0" layoutY="136.0" text="Makaron">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="173.0" text="Lazanya">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="383.0" layoutY="212.0" text="Waffle">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="makaron" layoutX="465.0" layoutY="136.0" text="No Order" />
+      <Label fx:id="lazanya" layoutX="465.0" layoutY="173.0" text="No Order" />
+      <Label fx:id="waffle" layoutX="465.0" layoutY="212.0" text="No Order" />
+      <Label layoutX="14.0" layoutY="14.0" text="User Name :" textFill="#ff1100">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="CName_" layoutX="102.0" layoutY="15.0" prefHeight="18.0" prefWidth="23.0" />
+   </children>
+</AnchorPane>

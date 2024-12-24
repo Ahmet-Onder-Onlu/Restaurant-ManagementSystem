@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo_db_management_project.IngredientInsert">
+   <children>
+      <Label layoutX="28.0" layoutY="14.0" text="Food's Ingredients">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="28.0" layoutY="339.0" mnemonicParsing="false" onAction="#switchToHomePage" text="Back">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="101.0" layoutY="100.0" text="Foods">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="248.0" layoutY="100.0" text="Ingredients">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="161.0" text="Makaron" />
+      <Label layoutX="99.0" layoutY="220.0" text="Lazanya" />
+      <Label layoutX="104.0" layoutY="282.0" text="Waffle" />
+      <TextArea layoutX="186.0" layoutY="151.0" prefHeight="38.0" prefWidth="200.0" text="200 gr Badem Unu, 30 gr Şeker,&#10;3 adet Yumurta&#10;" />
+      <TextArea layoutX="186.0" layoutY="209.0" prefHeight="38.0" prefWidth="200.0" text="150 gr Kıyma, 100 ml Sıvı Yağ, &#10;3 adet Domates, 20 gr Tuz" />
+      <TextArea layoutX="186.0" layoutY="271.0" prefHeight="38.0" prefWidth="200.0" text="20 gr Kabartma Tozu, &#10;3 paket Vanilya" />
+   </children>
+</AnchorPane>

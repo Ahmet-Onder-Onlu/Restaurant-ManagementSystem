@@ -1,0 +1,13 @@
+.anchor-pane {
+    -fx-background-image: url("../images/bg.png");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+.anchor-pane-homepage {
+    -fx-background-image: url("../images/hp.png");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
