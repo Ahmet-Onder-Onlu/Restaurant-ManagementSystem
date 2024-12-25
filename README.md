@@ -1,14 +1,14 @@
 # Restaurant-ManagementSystem
 Stocks, Orders, Feedback and Shipping
 
-1.	Gerçekleştirdiğiniz veri tabanı projesi için grup arkadaşlarınızın isimlerini yazınız ve projenize ait veri tabanı/diğer yazılım bileşenleri hakkında bilgi veriniz. (5 p)
+1.	Gerçekleştirdiğiniz veri tabanı projesi için grup arkadaşlarınızın isimlerini yazınız ve projenize ait veri tabanı/diğer yazılım bileşenleri hakkında bilgi veriniz. 
 
 Projemiz, Ahmet Önder Önlü, Furkan Enes Ergül ve Raşit Bera Topal tarafından; Java programlama dili, Mssql veri tabanı ve JavaFX (Scene Builder) arayüzü kullanılarak gerçekleştirilmiştir. 
 
 
-2.	Gerçekleştirdiğiniz veri tabanı projesi için proje dokümanınızı ve dosyalarınızı içeren herkese açık github bağlantılarınızı paylaşınız. (5 p)
+2.	Gerçekleştirdiğiniz veri tabanı projesi için proje dokümanınızı ve dosyalarınızı içeren herkese açık github bağlantılarınızı paylaşınız. 
 
-3.	Gerçekleştirdiğiniz projenin amacını detaylı bir şekilde açıklayınız. (10 p)
+3.	Gerçekleştirdiğiniz projenin amacını detaylı bir şekilde açıklayınız.
 Bu projenin amacı, restoranların günlük operasyonlarını daha verimli bir şekilde yönetmelerine olanak sağlayan bir sipariş ve stok yönetim sistemi geliştirmektir. Sistem, müşteri siparişlerinin, yemeklerin, kullanılan malzemelerin ve mevcut stok durumunun takibini yaparak, işletme süreçlerini optimize etmeyi hedefler.
 Projenin sunduğu ana işlevler şunlardır:
 1. Müşteri Yönetimi: Müşteri bilgilerini kaydetme ve düzenleme.
@@ -17,7 +17,7 @@ Projenin sunduğu ana işlevler şunlardır:
 4. Stok Yönetimi: Malzeme stoklarının izlenmesi, güncellenmesi ve stok seviyelerinin kritik seviyelerde uyarı vermesi.
 5. Malzeme Kullanım Takibi: Her bir yemek için gereken malzemelerin miktarlarının belirlenmesi ve stoktan otomatik düşülmesi.
 Bu sistem, restoranların günlük iş yükünü azaltmak, hata oranını düşürmek, ve işsüreçlerini hızlandırmak için kapsamlı bir çözüm sunmaktadır.
-4.	Tasarladığınız veri tabanı mimarisinde hangi tablo ve ilişkileri kullanıldığınızı açıklayınız. (10 p)
+4.	Tasarladığınız veri tabanı mimarisinde hangi tablo ve ilişkileri kullanıldığınızı açıklayınız. 
 
 Tablolar birbirlerine foreign ve primary key ile methodu cascade ve null olacak şekilde bağlanmıştır.
 
@@ -69,9 +69,9 @@ Stock (Stok):
 - QuantityInStock: Stokta bulunan malzeme miktarı. Her malzemenin mevcut stok durumunu takip eder.
 
 Tüm tabloların görevleri, alanların açıklamaları yapıldıktan sonra belirtilmiştir. Tablolara birbirlerine birincil ve yabancı anahtar ile bağlanmış; böylece hangi müşteri hangi siparişleri vermiş, tutarı ne kadar ve bu sipariş sonucu stock malzemeleri arasındaki bağlantılar sağlanmıştır.
-5.	Veri tabanı ER (Entity Relationship) diagramının bilgisayar ortamında çizilmiş halini paylaşınız. (Ara raporda eksik kısımlar bu raporda giderilmelidir ve ER çizme programlarından faydalanıbilir. Elle çizim, çizip fotoğrafını çekme vb. kabul edilmeyecektir.) (10 p)
+5.	Veri tabanı ER (Entity Relationship) diagramının bilgisayar ortamında çizilmiş halini paylaşınız. (Ara raporda eksik kısımlar bu raporda giderilmelidir ve ER çizme programlarından faydalanıbilir. Elle çizim, çizip fotoğrafını çekme vb. kabul edilmeyecektir.) 
 
-6.	Herhangi iki tablonuz için DDL (create) kodları yazılmalıdır. (10 p)
+6.	Herhangi iki tablonuz için DDL (create) kodları yazılmalıdır.
 
 Orders tablosu için CREATE DDL sorgusu
 CREATE TABLE Orders (
@@ -88,7 +88,7 @@ Name NVARCHAR(100) NOT NULL,   -- Müşteri adı
 Phone NVARCHAR(15),            -- Telefon numarası
 Email NVARCHAR(100)            -- Email adresi);
 
-7.	5 adet DML (update, insert, delete) içeren kodları yazılmalıdır. (10 p)
+7.	5 adet DML (update, insert, delete) içeren kodları yazılmalıdır. 
 INSERT INTO Customers (CustomerID, Name, Phone, Email)
 VALUES (1, 'Ahmet Önder', '5551234567', 'ahmet.onder@example.com');
 
@@ -106,7 +106,7 @@ WHERE CustomerID = 1;
 DELETE FROM Customers
 WHERE CustomerID = 2;
  
-8.	Projenize ait kendi belirlediğiniz 10 adet SQL sorgusu yazınız, sorguların amacını ve sonuç çıktısını da lütfen ekleyiniz.  (Açıklama: Sorgular Select deyimleri ve gruplama fonksiyonlarını HAVING deyimini (min, max, avg, count gibi) ve join deyimlerini (en az iki tablo ile birleştirme sorgusu) içerecek şekilde basitten karmaşığa doğru gitmelidir. Proje sunum anında veri tabanınıza ait sorular SQL ortamında gösterilecek ve açıklanacaktır. Raporunuzda ise sorgular, sorguların cevap ve sonuçlarının ekran görüntüsü olarak paylaşılması beklenmektedir. (10 p) 
+8.	Projenize ait kendi belirlediğiniz 10 adet SQL sorgusu yazınız, sorguların amacını ve sonuç çıktısını da lütfen ekleyiniz.  (Açıklama: Sorgular Select deyimleri ve gruplama fonksiyonlarını HAVING deyimini (min, max, avg, count gibi) ve join deyimlerini (en az iki tablo ile birleştirme sorgusu) içerecek şekilde basitten karmaşığa doğru gitmelidir. Proje sunum anında veri tabanınıza ait sorular SQL ortamında gösterilecek ve açıklanacaktır. Raporunuzda ise sorgular, sorguların cevap ve sonuçlarının ekran görüntüsü olarak paylaşılması beklenmektedir.
 
 Amaç: Customers tablosundaki tüm kayıtları getirir.
 Sonuç: Müşteri ID, isim, telefon ve e-posta bilgilerini listeleyen bir tablo.
@@ -170,20 +170,19 @@ GROUP BY C.CustomerID, C.Name
 ORDER BY TotalOrders DESC;
 
 
-9.	Eğer gerçekleştirmiş iseniz, veri tabanı bağlama ve uygulama geliştirme aşamalarınızı kısaca açıklayarak, kullanıcı ara yüz ekranından bir örnek veriniz. Ve geliştirdiğiniz ara yüzü anlatınız. (10 p)
+9.	Eğer gerçekleştirmiş iseniz, veri tabanı bağlama ve uygulama geliştirme aşamalarınızı kısaca açıklayarak, kullanıcı ara yüz ekranından bir örnek veriniz. Ve geliştirdiğiniz ara yüzü anlatınız. 
 
 Veri tabanına mssql configuration manager üzerinden TCP/IP ve diğer haberleşme protokollerini aktifleştirdim ve bu şekilde sa yönetici ve password’ü kullanarak bağlantı sağladım. Daha sonra maven dosyası üzerine mssql için bağıntıları ekledik. Böylece bağlantıyı başarıyla sağladık. Daha sonra Java üzerinden oluşturulan sql sorguları aracılığyla veri tabanı üzerinde ddl ve dml komutlarını çalıştırmayı başardık. 
 Kullanıcı arayüzünde ilk başta kullanıcı girişi yapılması istenmekte ve daha sonrasında bu kullanıcının id’si kullanılarak bunun üzerinden işlemler yapılmaktadır. Daha sonraki menü sayfasında 4 farklı sekme bulunmakta bunlar müşteri işlemleri ve yönetim işlemlerini yönetmektedir. Buradan açılan sayfalar üzerinde yapılan işlemler veri tabanını etkilemektedir.
 
  
 
-10.	Eğer veri tabanı bağlama işlemini gerçekleştirmemiş iseniz VTYS sistemlerinde Transaction nedir açıklayınız ve çalışmanızdan bir Transaction örneği veriniz. (10 p)
+10.	Eğer veri tabanı bağlama işlemini gerçekleştirmemiş iseniz VTYS sistemlerinde Transaction nedir açıklayınız ve çalışmanızdan bir Transaction örneği veriniz. 
 
 Veri tabanı bağlama işlemi gerçekleştirilmiştir.
 
 
 11.	View nedir açıklayınız ve bir adet view, bir adet saklı yordam (Stored Procedute)  ifadesine ait SQL deyimlerinin sorgusunu ve cevabını yazınız.
-(10 p)
 
 View (görünüm), bir veya birden fazla tablodan alınan verilerin SQL sorgusu ile bir araya getirilerek sanal bir tablo oluşturulmasıdır. Bu sanal tablo fiziksel olarak veri saklamaz, yalnızca sorgu sonuçlarını görüntüler. Veri tabanı üzerindeki karmaşık sorguları sadeleştirmek ve güvenliği artırmak için kullanılır.
 
